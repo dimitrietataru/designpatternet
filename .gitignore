@@ -1,0 +1,32 @@
+###################
+# compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+*.htm
+
+###############
+# Directories #
+###############
+bin/
+obj/
+TestResults/
+.vs/
+
+############
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
