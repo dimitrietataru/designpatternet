@@ -6,13 +6,13 @@ namespace Builder.Builders
     {
         public override void BuildDrink()
         {
-            drink.Name = "coffee";
+            Drink.Name = "coffee";
             Console.WriteLine("Building a coffee");
         }
 
         public override void BuildSize()
         {
-            drink.Size = "small";
+            Drink.Size = "small";
             Console.WriteLine("Building a small drink" + Environment.NewLine);
         }
     }

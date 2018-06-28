@@ -8,7 +8,7 @@ namespace Builder.Pub
 
         public void SetBuilder(AbstractDrinkBuilder drinkBuilder) => this.drinkBuilder = drinkBuilder;
 
-        public Drink GetDrink() => drinkBuilder.GetDrink();
+        public Drink GetDrink() => drinkBuilder.Drink;
 
         public void OrderDrink()
         {

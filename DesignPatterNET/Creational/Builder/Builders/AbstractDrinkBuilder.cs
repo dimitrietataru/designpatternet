@@ -4,15 +4,13 @@ namespace Builder.Builders
 {
     public abstract class AbstractDrinkBuilder
     {
-        protected Drink drink;
+        public Drink Drink { get; private set; }
 
         public void OrderDrink()
         {
-            drink = new Drink();
+            Drink = new Drink();
             System.Console.WriteLine("A new order was created");
         }
-
-        public Drink GetDrink() => drink;
 
         public abstract void BuildDrink();
         public abstract void BuildSize();
