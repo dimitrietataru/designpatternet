@@ -8,9 +8,15 @@ namespace Bridge
     {
         static void Main(string[] args)
         {
-            ITv tv = new SamsungTv();
+            ITv samsung = new SamsungTv();
+            ITv sony = new SonyTv();
 
-            AbstractRemoteController rc = new RemoteController(tv);
+            AbstractRemoteController rc = new RemoteController(samsung);
+            rc.TurnOn();
+            rc.SwitchChannel(100);
+            rc.TurnOff();
+
+            rc = new RemoteController(sony);
             rc.TurnOn();
             rc.SwitchChannel(100);
             rc.TurnOff();
