@@ -5,9 +5,6 @@ namespace AbstractFactory.CPUs
 {
     public class Amd : ICpu
     {
-        public void Process()
-        {
-            Console.WriteLine("AMD is processing..");
-        }
+        public void Process() => Console.WriteLine("AMD is processing..");
     }
 }

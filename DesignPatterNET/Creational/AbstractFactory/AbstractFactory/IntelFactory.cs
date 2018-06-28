@@ -5,9 +5,6 @@ namespace AbstractFactory.AbstractFactory
 {
     public class IntelFactory : ICpuFactory
     {
-        public ICpu ProduceCpu()
-        {
-            return new Intel();
-        }
+        public ICpu ProduceCpu() => new Intel();
     }
 }
