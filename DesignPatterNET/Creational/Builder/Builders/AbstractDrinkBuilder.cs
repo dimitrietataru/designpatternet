@@ -1,4 +1,5 @@
 ﻿using Builder.Pub;
+using System;
 
 namespace Builder.Builders
 {
@@ -9,7 +10,7 @@ namespace Builder.Builders
         public void OrderDrink()
         {
             Drink = new Drink();
-            System.Console.WriteLine("A new order was created");
+            Console.WriteLine("A new order was created");
         }
 
         public abstract void BuildDrink();

@@ -2,7 +2,9 @@
 {
     public class Drink
     {
-        public string Name { get; set; }
-        public string Size { get; set; }
+        public string Name { private get; set; }
+        public string Size { private get; set; }
+
+        public new string ToString() => $"{Size} {Name}";
     }
 }

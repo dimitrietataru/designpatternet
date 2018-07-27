@@ -5,11 +5,10 @@ namespace Builder.Pub
     public class Waiter
     {
         private AbstractDrinkBuilder drinkBuilder;
+        public Drink OrderedDrink => drinkBuilder.Drink;
 
-        public void SetBuilder(AbstractDrinkBuilder drinkBuilder) => this.drinkBuilder = drinkBuilder;
-
-        public Drink GetDrink() => drinkBuilder.Drink;
-
+        public Waiter(AbstractDrinkBuilder drinkBuilder) => this.drinkBuilder = drinkBuilder;
+        
         public void OrderDrink()
         {
             drinkBuilder.OrderDrink();
