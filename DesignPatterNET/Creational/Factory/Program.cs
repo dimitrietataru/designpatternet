@@ -5,13 +5,13 @@ namespace Factory
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            IHuman boy = HumanFactory.GetHuman("boy");
+            IHuman boy = HumanFactory.GetHuman(type: "boy");
             boy.Talk();
             boy.Walk();
 
-            IHuman girl = HumanFactory.GetHuman("girl");
+            IHuman girl = HumanFactory.GetHuman(type: "girl");
             girl.Talk();
             girl.Walk();
         }
