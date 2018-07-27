@@ -4,13 +4,15 @@ namespace Singleton
 {
     public sealed class Singleton
     {
+        public static Singleton Instance => GetInstance();
+
         public string Value { get; set; }
         private static Singleton instance = null;
         private static readonly object lockObj = new object();
 
         private Singleton() {}
 
-        public static Singleton GetInstance()
+        private static Singleton GetInstance()
         {
             Console.WriteLine("Getting singleton instance..");
 

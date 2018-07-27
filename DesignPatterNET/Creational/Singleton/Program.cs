@@ -4,14 +4,14 @@ namespace Singleton
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Singleton singleton1 = Singleton.GetInstance();
-            Singleton singleton2 = Singleton.GetInstance();
+            var instanceOne = Singleton.Instance;
+            var instanceTwo = Singleton.Instance;
 
-            singleton1.Value = "Singleton 1";
-            Console.WriteLine($"Value in singleton 1: '{singleton1.Value}'");
-            Console.WriteLine($"Value in singleton 2: '{singleton2.Value}'");
+            instanceOne.Value = "persistent value";
+            Console.WriteLine($"Value in 1st instance: '{instanceOne.Value}'");
+            Console.WriteLine($"Value in 2nd instance: '{instanceTwo.Value}'");
         }
     }
 }
