@@ -4,7 +4,7 @@ namespace Builder.Pub
 {
     public class Waiter
     {
-        private AbstractDrinkBuilder drinkBuilder;
+        private protected AbstractDrinkBuilder drinkBuilder;
         public Drink OrderedDrink => drinkBuilder.Drink;
 
         public Waiter(AbstractDrinkBuilder drinkBuilder) => this.drinkBuilder = drinkBuilder;

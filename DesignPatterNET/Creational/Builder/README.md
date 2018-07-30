@@ -1,4 +1,5 @@
-> The key feature of Builder pattern is that it involves a step-by-step process to build something. Every product will follow the same process even though each step is different.
+> The key feature of Builder pattern is that it involves a step-by-step process to build something.  
+> Every product will follow the same process even though each step is different.
 
 #### Output
 ```
