@@ -2,7 +2,7 @@
 
 namespace Bridge.Remotes
 {
-    public class AbstractRemoteController
+    public abstract class AbstractRemoteController
     {
         private readonly ITv tv;
 
