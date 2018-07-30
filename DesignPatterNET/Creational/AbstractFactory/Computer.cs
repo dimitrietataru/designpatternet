@@ -4,7 +4,7 @@ namespace AbstractFactory
 {
     public class Computer
     {
-        private ICpu Cpu { get; set; }
+        private protected ICpu Cpu { get; set; }
 
         public Computer(ICpuFactory factory)
         {

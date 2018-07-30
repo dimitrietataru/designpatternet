@@ -1,4 +1,5 @@
-> Abstract Factory adds another layer of abstraction for Factory pattern. Abstract Factory is a super-factory which creates other factories.
+> Abstract Factory adds another layer of abstraction for Factory pattern.  
+> Abstract Factory is a super-factory which creates other factories.
 
 #### Output
 ```
