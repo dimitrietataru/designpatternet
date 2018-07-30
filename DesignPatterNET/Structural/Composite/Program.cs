@@ -22,6 +22,7 @@ namespace Composite
             tree2.Add(leaf5);
 
             tree1.Add(tree2);
+            tree2.Remove(leaf3);
             tree1.Show();
         }
     }
