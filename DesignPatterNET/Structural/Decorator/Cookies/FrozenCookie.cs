@@ -2,7 +2,7 @@
 
 namespace Decorator.Cookies
 {
-    public class FrozenCookie : Cookie
+    public class FrozenCookie : AbstractCookie
     {
         public override string GetDescription() => "Frozen cookie";
     }

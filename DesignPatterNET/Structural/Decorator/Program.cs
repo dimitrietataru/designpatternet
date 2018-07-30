@@ -9,7 +9,7 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            Cookie c1 = new BakedCookie();
+            AbstractCookie c1 = new BakedCookie();
             Console.WriteLine(c1.GetDescription());
 
             Vanilla c2 = new Vanilla(c1);
@@ -18,7 +18,7 @@ namespace Decorator
             Chocolate c3 = new Chocolate(c2);
             Console.WriteLine(c3.GetDescription());
 
-            Cookie c4 = new Chocolate(new Vanilla(new FrozenCookie()));
+            AbstractCookie c4 = new Chocolate(new Vanilla(new FrozenCookie()));
             Console.WriteLine(c4.GetDescription());
         }
     }

@@ -1,10 +1,10 @@
 ﻿namespace Decorator.Interfaces
 {
-    public abstract class CookieDecorator : Cookie
+    public abstract class CookieDecorator : AbstractCookie
     {
-        private Cookie cookie;
+        private AbstractCookie cookie;
 
-        protected CookieDecorator(Cookie cookie) => this.cookie = cookie;
+        protected CookieDecorator(AbstractCookie cookie) => this.cookie = cookie;
 
         public override string GetDescription() => cookie.GetDescription();
     }
