@@ -11,6 +11,8 @@ namespace Prototype
 
         public void SetSize(int size) => this.size = size;
         public void PrintSize() => Console.WriteLine($"Size: {size}");
+
         public object Clone() => MemberwiseClone();
+        public Prototype CloneManually() => new Prototype(size);
     }
 }

@@ -12,6 +12,12 @@
                 temp.SetSize(i);
                 temp.PrintSize();
             }
+            for (int i = 10; i < 20; ++i)
+            {
+                Prototype temp = p.CloneManually();
+                temp.SetSize(i);
+                temp.PrintSize();
+            }
         }
     }
 }
