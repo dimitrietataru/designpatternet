@@ -20,10 +20,7 @@ namespace Flyweight.Pub
 
         public void ProcessOrders()
         {
-            orders.ForEach(order =>
-            {
-                order.coffee.Serve(order.table);
-            });
+            orders.ForEach(order => order.coffee.Serve(order.table));
         }
     }
 }
