@@ -1,7 +1,6 @@
 ﻿using Observer.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Observer.Business
 {
@@ -26,11 +25,6 @@ namespace Observer.Business
             Console.WriteLine($"A new job was added: {job}");
             jobs.Add(job);
             NotifyAllObservers();
-        }
-
-        public void ShowUsers()
-        {
-            Console.WriteLine($"Users to notify: {String.Join(", ", users)}");
         }
     }
 }

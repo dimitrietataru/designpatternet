@@ -9,6 +9,6 @@ namespace Observer.Business
 
         public JobSeeker(string name) => Name = name;
 
-        public void Update(ISubject s) => Console.WriteLine($"{Name} got notified");
+        public void Update(ISubject _) => Console.WriteLine($"{Name} got notified");
     }
 }

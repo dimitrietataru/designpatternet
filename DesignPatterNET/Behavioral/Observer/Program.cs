@@ -21,7 +21,6 @@ namespace Observer
             headHunter.RegisterObserver(jobSeeker);
             headHunter.RegisterObservers(jobSeekers);
 
-            headHunter.ShowUsers();
             headHunter.AddJob("Google job");
             headHunter.RemoveObserver(jobSeeker);
             headHunter.AddJob("Microsoft job");
