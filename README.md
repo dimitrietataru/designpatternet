@@ -14,3 +14,16 @@
   - Facade
   - Flyweight
   - Proxy
+* Behavioral
+  - Chain of responsability
+  - Command
+  - Interpreter
+  - Iterator
+  - Mediator
+  - Memento
+  - Observer
+  - State
+  - Strategy
+  - Template
+  - Visitor
+  
