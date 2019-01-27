@@ -9,6 +9,7 @@ namespace State.States
         public StateContext() => state = new Poor();
 
         public void ChangeState(IState state) => this.state = state;
+
         public void SaySomething() => state.SaySomething(this);
     }
 }

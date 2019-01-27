@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ChainOfResponsability.Interfaces
+﻿namespace ChainOfResponsability.Interfaces
 {
     public abstract class AbstractChain
     {
@@ -25,6 +23,6 @@ namespace ChainOfResponsability.Interfaces
             }
         }
 
-        abstract protected void WriteMessage(String message);
+        abstract protected void WriteMessage(string message);
     }
 }

@@ -2,7 +2,7 @@
 {
     public abstract class AbstractVehicle
     {
-        protected bool Status { get; set; }
+        protected bool status;
 
         public abstract void Start();
         public abstract void Run();
@@ -11,7 +11,7 @@
         public void Test()
         {
             Start();
-            if (Status)
+            if (status)
             {
                 Run();
                 Stop();

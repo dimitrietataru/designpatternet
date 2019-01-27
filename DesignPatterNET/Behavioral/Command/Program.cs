@@ -14,11 +14,11 @@ namespace Command
             ICommand shutdown = new Shutdown(computer);
             ICommand restart = new Restart(computer);
 
-            Switch s = new Switch();
-            s.Execute(shutdown);
-            s.Execute(restart);
+            Switch sw = new Switch();
+            sw.Execute(shutdown);
+            sw.Execute(restart);
 
-            Console.WriteLine($"Executed {s.Logs.Count} commands.");
+            Console.WriteLine($"Executed {sw.Commands()} commands.");
         }
     }
 }

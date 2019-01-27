@@ -17,10 +17,10 @@ namespace Visitor.v2.Peoples
                     Console.WriteLine("I am visiting the museum!");
                     break;
                 case Park park:
-                    // falls through
-                default:
                     Console.WriteLine("I am visiting the park!");
                     break;
+                default:
+                    throw new EntryPointNotFoundException();
             }
         }
     }

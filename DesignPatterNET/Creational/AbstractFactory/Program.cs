@@ -1,6 +1,7 @@
-﻿using AbstractFactory.AbstractFactory;
-using AbstractFactory.CPUs;
+﻿using AbstractFactory.AbstractFactories;
+using AbstractFactory.Enums;
 using AbstractFactory.Interfaces;
+using System;
 
 namespace AbstractFactory
 {
@@ -17,14 +18,14 @@ namespace AbstractFactory
 
         private static ICpuFactory GetFactory(CpuType type)
         {
-            switch(type)
+            switch (type)
             {
                 case CpuType.Amd:
                     return new AmdFactory();
                 case CpuType.Intel:
-                    // falls through
-                default:
                     return new IntelFactory();
+                default:
+                    throw new EntryPointNotFoundException();
             }
         }
     }

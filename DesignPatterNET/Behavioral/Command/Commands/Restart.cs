@@ -5,10 +5,10 @@ namespace Command.Commands
 {
     public class Restart : ICommand
     {
-        private Computer Computer { get; set; }
+        private readonly Computer computer;
 
-        public Restart(Computer computer) => Computer = computer;
+        public Restart(Computer computer) => this.computer = computer;
 
-        public void Execute() => Computer.Restart();
+        public void Execute() => computer.Restart();
     }
 }

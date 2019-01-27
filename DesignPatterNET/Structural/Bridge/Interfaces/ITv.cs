@@ -1,6 +1,6 @@
 ﻿namespace Bridge.Interfaces
 {
-    public interface ITv
+    public interface ITV
     {
         void On();
         void Off();

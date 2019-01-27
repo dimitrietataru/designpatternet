@@ -1,4 +1,4 @@
-﻿using Factory.Factory;
+﻿using Factory.Factories;
 using Factory.Interfaces;
 
 namespace Factory

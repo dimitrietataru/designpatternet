@@ -12,7 +12,7 @@ namespace Flyweight.Pub
         {
             flavors.TryGetValue(flavor, out Coffee coffee);
 
-            if (coffee == null)
+            if (coffee is null)
             {
                 coffee = new Coffee(flavor);
                 flavors[flavor] = coffee;

@@ -5,14 +5,16 @@ namespace Command.Invokers
 {
     class Switch
     {
-        public List<ICommand> Logs { get; private set; }
+        public List<ICommand> logs;
 
-        public Switch() => Logs = new List<ICommand>();
+        public Switch() => logs = new List<ICommand>();
 
         public void Execute(ICommand command)
         {
-            Logs.Add(command);
+            logs.Add(command);
             command.Execute();
         }
+
+        public int Commands() => logs.Count;
     }
 }

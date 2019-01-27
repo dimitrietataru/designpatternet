@@ -6,8 +6,8 @@ namespace Observer.Business
 {
     public class HeadHunter : ISubject
     {
-        private List<IObserver> users;
-        private List<string> jobs;
+        private readonly List<IObserver> users;
+        private readonly List<string> jobs;
 
         public HeadHunter()
         {
@@ -16,8 +16,11 @@ namespace Observer.Business
         }
 
         public void RegisterObserver(IObserver observer) => users.Add(observer);
+
         public void RegisterObservers(List<IObserver> observers) => users.AddRange(observers);
+
         public void RemoveObserver(IObserver observer) => users.Remove(observer);
+
         public void NotifyAllObservers() => users.ForEach(user => user.Update(this));
 
         public void AddJob(string job)

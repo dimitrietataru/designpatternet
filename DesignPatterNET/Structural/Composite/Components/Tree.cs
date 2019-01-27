@@ -9,8 +9,10 @@ namespace Composite.Components
 
         public Tree() => childs = new List<IComponent>();
 
-        public void Add(IComponent component) => childs.Add(component);
-        public void Remove(IComponent component) => childs.Remove(component);
         public void Show() => childs.ForEach(child => child.Show());
+
+        public void Add(IComponent component) => childs.Add(component);
+
+        public void Remove(IComponent component) => childs.Remove(component);
     }
 }

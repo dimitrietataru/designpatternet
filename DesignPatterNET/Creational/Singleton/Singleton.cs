@@ -4,13 +4,16 @@ namespace Singleton
 {
     public sealed class Singleton
     {
+        private static readonly object lockObj = new object();
+        private static Singleton instance = null;
+
+        private Singleton()
+        {
+        }
+
         public static Singleton Instance => GetInstance();
 
         public string Value { get; set; }
-        private static Singleton instance = null;
-        private static readonly object lockObj = new object();
-
-        private Singleton() {}
 
         private static Singleton GetInstance()
         {
@@ -18,11 +21,12 @@ namespace Singleton
 
             lock (lockObj)
             {
-                if (instance == null)
+                if (instance is null)
                 {
                     Console.WriteLine("Creating a new instance.." + Environment.NewLine);
                     instance = new Singleton();
                 }
+
                 return instance;
             }
         }

@@ -8,7 +8,7 @@ namespace Iterator
         {
             var items = new string[] { "1", "2", "3", "a", "b", "c" };
 
-            var collection = new Collection(items);
+            var collection = new Collection<string>(items);
             var iterator = collection.GetIterator();
 
             while (iterator.HasNext())

@@ -22,9 +22,9 @@ namespace Memento
 
         public class Memento
         {
-            public string Time { get; private set; }
-
             public Memento(DateTime time) => Time = time.ToString("yyyy-MM-dd");
+
+            public string Time { get; private set; }
         }
     }
 }

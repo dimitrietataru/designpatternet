@@ -10,7 +10,7 @@ namespace Builder.Builders
         public void OrderDrink()
         {
             Drink = new Drink();
-            Console.WriteLine("A new order was created");
+            Console.WriteLine("A new order was created.");
         }
 
         public abstract void BuildDrink();

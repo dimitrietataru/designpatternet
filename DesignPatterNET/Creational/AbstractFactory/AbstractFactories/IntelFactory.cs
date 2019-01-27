@@ -1,7 +1,7 @@
-﻿using AbstractFactory.CPUs;
+﻿using AbstractFactory.Cpus;
 using AbstractFactory.Interfaces;
 
-namespace AbstractFactory.AbstractFactory
+namespace AbstractFactory.AbstractFactories
 {
     public class IntelFactory : ICpuFactory
     {

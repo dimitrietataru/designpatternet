@@ -1,7 +1,7 @@
 ﻿using AbstractFactory.Interfaces;
 using System;
 
-namespace AbstractFactory.CPUs
+namespace AbstractFactory.Cpus
 {
     public class Intel : ICpu
     {

@@ -4,12 +4,12 @@ namespace AbstractFactory
 {
     public class Computer
     {
-        private protected ICpu Cpu { get; set; }
+        private protected readonly ICpu cpu;
 
         public Computer(ICpuFactory factory)
         {
-            Cpu = factory.ProduceCpu();
-            Cpu.Process();
+            cpu = factory.ProduceCpu();
+            cpu.Process();
         }
     }
 }

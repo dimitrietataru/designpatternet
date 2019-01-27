@@ -2,23 +2,26 @@
 
 namespace Iterator
 {
-    public class Collection : IContainer
+    public class Collection<T> : IContainer
+        where T : class
     {
-        private string[] Items { get; }
+        private readonly T[] items;
 
-        public Collection(string[] items) => Items = items;
+        public Collection(T[] items) => this.items = items;
 
-        public IIterator GetIterator() => new CollectionIterator(Items);
+        public IIterator GetIterator() => new CollectionIterator<T>(items);
         
-        private class CollectionIterator : IIterator
+        private class CollectionIterator<TInner> : IIterator
+            where TInner : class
         {
-            private string[] Items { get; set; }
-            private int Index { get; set; }
+            private readonly TInner[] items;
+            private int index = 0;
 
-            public CollectionIterator(string[] collection) => Items = collection;
+            public CollectionIterator(TInner[] items) => this.items = items;
 
-            public bool HasNext() => (Index < Items.Length);
-            public object Next() => HasNext() ? Items[Index++] : null;
+            public bool HasNext() => index < items.Length;
+
+            public object Next() => HasNext() ? items[index++] : null;
         }
     }
 }

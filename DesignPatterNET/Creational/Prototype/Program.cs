@@ -4,17 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Prototype p = new Prototype(1);
+            Prototype prototype = new Prototype(0);
 
-            for (int i = 2; i < 10; ++i)
+            for (int i = 1; i < 6; ++i)
             {
-                Prototype temp = p.Clone() as Prototype;
+                Prototype temp = prototype.Clone() as Prototype;
                 temp.SetSize(i);
                 temp.PrintSize();
             }
-            for (int i = 10; i < 20; ++i)
+
+            for (int i = 11; i < 16; ++i)
             {
-                Prototype temp = p.CloneManually();
+                Prototype temp = prototype.CloneManually();
                 temp.SetSize(i);
                 temp.PrintSize();
             }

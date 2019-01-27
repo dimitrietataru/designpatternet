@@ -1,7 +1,8 @@
 ﻿using Factory.Humans;
 using Factory.Interfaces;
+using System;
 
-namespace Factory.Factory
+namespace Factory.Factories
 {
     public class HumanFactory
     {
@@ -12,9 +13,9 @@ namespace Factory.Factory
                 case "boy":
                     return new Boy();
                 case "girl":
-                    // falls through
-                default:
                     return new Girl();
+                default:
+                    throw new EntryPointNotFoundException();
             }
         }
     }

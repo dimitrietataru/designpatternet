@@ -7,11 +7,9 @@ namespace Interpreter
 {
     class Program
     {
-        private const string Expression = "abcd";
-
         static void Main(string[] args)
         {
-            var context = new Context(Expression);
+            var context = new Context("abcd");
             var expressions = new List<AbstractExpression> { new ExpressionA(), new ExpressionB() };
 
             expressions.ForEach(expression => expression.Interpret(context));

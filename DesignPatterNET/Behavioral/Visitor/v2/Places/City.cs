@@ -8,10 +8,7 @@ namespace Visitor.v2.Places
     {
         private readonly List<IPlace> places;
 
-        public City()
-        {
-            places = new List<IPlace> { new Museum(), new Park() };
-        }
+        public City() => places = new List<IPlace> { new Museum(), new Park() };
 
         public void Accept(IVisitor visitor)
         {

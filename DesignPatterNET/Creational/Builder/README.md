@@ -3,11 +3,11 @@
 
 #### Output
 ```
-A new order was created
+A new order was created.
 Building a coffee
 Building a small drink
 
-A new order was created
+A new order was created.
 Building a tea
 Building a large drink
 

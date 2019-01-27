@@ -11,7 +11,7 @@ namespace Mediator
 
         public void Register(AbstractColleague colleague)
         {
-            switch(colleague)
+            switch (colleague)
             {
                 case ColleagueA a:
                     this.a = a;
@@ -25,6 +25,7 @@ namespace Mediator
         }
 
         public void Fight() => Console.WriteLine("Mediator is fighting.");
+
         public void Talk() => Console.WriteLine("Mediator is talking.");
     }
 }
